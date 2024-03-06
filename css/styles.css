@@ -110,6 +110,11 @@ a.gotop{
     margin: 1rem 2rem;
 }
 
+#search-bar{
+    font-size: smaller;
+    size: .5rem;
+}
+
 /*-------------------- Giới Thiệu --------------------*/
 
 .right-image{
@@ -290,4 +295,8 @@ a:hover{
 
 .tieude{
     background-color: rgb(201, 192, 192);
+}
+
+.space{
+    padding: 3rem;
 }
