@@ -1,0 +1,293 @@
+.header{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header1{
+    position: fixed;
+    left: -10px;
+    right: -10px;
+    top: 0;
+    font-size: 1.2rem;
+    z-index: 100;
+}
+
+.header-1{
+    display: flex;
+    padding: 20px 200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    background-color: rgb(25, 29, 61);
+}
+
+a.nav{
+    text-decoration: none;
+    color: white;
+}
+
+a.nav:hover{
+    color: #4c63e6;
+}
+
+main{
+    margin-top: 130px;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    margin-bottom: 100px;
+}
+
+.footer{
+    background-color: rgb(25, 29, 61);
+    margin: 0 auto;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+
+.footer2{
+    margin: 0 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.icon-footer{
+    margin: 0 0 30px;
+    color: white;
+}
+
+#logo-footer{
+    display: flex;
+    margin-top: 20px;
+}
+
+a.gotop{
+    position: fixed;
+	bottom: 5px;
+	right: 10px;
+	z-index: 100;
+	padding: 10px;
+}
+
+.sale-onl{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.ts{
+    margin: 10px 20px;
+}
+
+.sale-pic{
+    margin: 3rem 10rem;
+}
+
+.sale-pic:hover{
+    cursor: pointer;
+}
+
+#tsv::after{
+    position: absolute;
+    content: "";
+    background: rgb(25, 29, 61);
+    width: 3px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.news{
+    margin: 1rem 2rem;
+}
+
+/*-------------------- Giới Thiệu --------------------*/
+
+.right-image{
+    margin: 36px 100px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.main-gt1{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}
+
+.left-content{
+    flex: 2;
+}
+
+.main-gt1-1{
+    align-self: flex-start;
+}
+
+.main-gt1-2{
+    align-self: flex-end;
+}
+
+h1{
+    margin: 12px 0 16px;
+	text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+h1::after{
+    position: relative;
+	display: block;
+	left: 50%;
+	content: "";
+	width: 200px;
+	height: 3px;
+	transform: skewX(-12deg);
+	transform: translate(-50%);
+	background: rgb(25, 29, 61);
+}
+
+.left-image{
+    margin: 36px 100px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.main-gt2{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+}
+
+.right-content{
+    flex: 2;
+}
+
+.main-gt2-1{
+    align-self: flex-end;
+}
+
+.main-gt2-2{
+    align-self: flex-start;
+}
+
+a:hover{
+    color: red;
+}
+
+/*-------------------- Sản Phẩm --------------------*/
+
+.sp{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.demuc{
+    display: flex;
+    flex-direction: column;
+}
+
+.dieuhuong{
+    align-self: flex-end;
+}
+
+.sp1{
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.sp1::after{
+    position: absolute;
+    content: "";
+    background: rgb(25, 29, 61);
+    width: 3px;
+    height: 37px;
+    margin-left: 10px;
+}
+
+#tsnu, #tsnam, #tsd, #tsb{
+    padding-top: 90px;
+}
+
+/*-------------------- Đăng Nhập, Đăng ký, Liên hệ --------------------*/
+
+.loginnho{
+    font-size: 1rem ;
+
+}
+
+.form-container {
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: rgb(201, 192, 192);
+}
+
+.form-row {
+    padding: 8px 0;
+    display: flex;
+    align-self: center;
+}
+
+.form-label {
+    min-width: 30px;
+}
+
+.form-input {
+    flex: 1;
+}
+
+.loginmid {
+    text-align-last: center;
+}
+
+.main-lh{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/*-------------------- Giỏ hàng --------------------*/
+
+.card {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card_table {
+    width: 100%;
+    border:1px solid black;
+}
+
+.card_table th,
+.card_table td {
+    border:1px solid black;
+}
+
+.ct_r {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.card_table th{
+    text-align: center;
+}
+
+.tieude{
+    background-color: rgb(201, 192, 192);
+}

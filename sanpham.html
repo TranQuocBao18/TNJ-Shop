@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="shortcut icon" href="images/logo/logo-tnj.ico">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <ul class="header-1">
+                <li>
+                    <a href="trangchu.html"><img src="images/logo/tnj-logo-header.jpg" alt="TNJ"></a>
+                </li>
+                <li>
+                    <div><a href="trangchu.html" class="nav">Trang chủ</a></div>
+                </li>
+                <li>
+                    <div><a href="gioithieu.html" class="nav">Giới thiệu</a></div>
+                </li>
+                <li>
+                    <div><a href="sanpham.html" class="nav">Sản phẩm</a></div>
+                </li>
+                <li>
+                    <div><a href="dangnhap.html" class="nav">Đăng nhập</a></div>
+                </li>
+                <li>
+                    <div><a href="dangky.html" class="nav">Đăng ký</a></div>
+                </li>
+                <li>
+                    <div><a href="lienhe.html" class="nav">Liên hệ</a></div>
+                </li>
+                <li>
+                    <span style="color: #4c63e6;">
+                        <form class="search-container" onsubmit="return send()" method="get" action="timkiem.html">
+                            <input id="search-bar" type="text" placeholder="Nhập nội dung cần tìm">
+                            <button type="submit" id="search-icon" style="background-color: rgb(25, 29, 61); border: 0px;"><i class="fas fa-search" style="color: #4c63e6;"></i></button>
+                        </form>
+                    </span>
+                </li>
+                <li>
+                    <span style="color: #4c63e6;">
+                        <a href="giohang.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="sp">
+        <div class="demuc">
+            <h1>Sản Phẩm</h1>
+            <br>
+            <div class="dieuhuong">
+                <a href="#tsnu" class="sp1">Trang Sức Nữ</a>
+                <a href="#tsd" class="sp1">Trang Sức Đôi</a>
+                <a href="#tsnam" class="sp1">Trang Sức Nam</a>
+                <a href="#tsb" style="text-decoration: none; font-size: 30px;">Trang Sức Cho Bé</a>
+            </div>
+        </div>
+
+        <br>
+        <h2 id="tsnu">Trang Sức Nữ</h2>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu1.jpg" alt="Hình 1" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Khắc Tên Hình Trái Tim DCN0460</p>
+                    <p style="color: #4c63e6;">Giá: 430000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn001">
+                            <button onclick="addCart('tsn001')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu2.jpg" alt="Hình 2" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Khắc Tên Mặt Hình Trái Tim DCN0451</p>
+                    <p style="color: #4c63e6;">Giá: 430000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn002">
+                            <button onclick="addCart('tsn002')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu3.jpg" alt="Hình 3" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Khắc Tên Hình Trái Tim DCN0496</p>
+                    <p style="color: #4c63e6;">Giá: 430000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn003">
+                            <button onclick="addCart('tsn003')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu4.jpg" alt="Hình 4" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Mặt Trăng Sao Khắc Tên DCN0436</p>
+                    <p style="color: #4c63e6;">Giá: 450000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn004">
+                            <button onclick="addCart('tsn004')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu5.jpg" alt="Hình 5" class="tc">
+                    <p>Dây Chuyền Cỏ 4 Lá Khắc Tên DCN0456</p>
+                    <p style="color: #4c63e6;">Giá: 380000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn005">
+                            <button onclick="addCart('tsn005')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu6.jpg" alt="Hình 6" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Cá Tính Khắc Tên DCN0423</p>
+                    <p style="color: #4c63e6;">Giá: 450000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn006">
+                            <button onclick="addCart('tsn006')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu7.jpg" alt="Hình 7" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Hình Trái Tim Khắc Tên Đẹp DCN0450</p>
+                    <p style="color: #4c63e6;">Giá: 430000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn007">
+                            <button onclick="addCart('tsn007')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu8.jpg" alt="Hình 8" class="tc">
+                    <p>Lắc Tay Bi Bạc Nữ Khắc Tên Theo Yêu Cầu LTN0146</p>
+                    <p style="color: #4c63e6;">Giá: 480000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn008">
+                            <button onclick="addCart('tsn008')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsnu9.jpg" alt="Hình 9" class="tc">
+                    <p>Dây Chuyền Bạc Nữ Mặt Trái Tim Chữ Love Đính Đá Đẹp DCN0421</p>
+                    <p style="color: #4c63e6;">Giá: 450000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsn009">
+                            <button onclick="addCart('tsn009')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="tsd">Trang Sức Đôi</h2>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd1.jpg" alt="Hình 1" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Tím ND0285</p>
+                    <p style="color: #4c63e6;">Giá: 550000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd001">
+                            <button onclick="addCart('tsd001')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd2.jpg" alt="Hình 2" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Xanh ND0042</p>
+                    <p style="color: #4c63e6;">Giá: 600000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd002">
+                            <button onclick="addCart('tsd002')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd3.jpg" alt="Hình 3" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Tím ND0280</p>
+                    <p style="color: #4c63e6;">Giá: 700000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd003">
+                            <button onclick="addCart('tsd003')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd4.jpg" alt="Hình 4" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Tình Nhân ND0286</p>
+                    <p style="color: #4c63e6;">Giá: 550000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd004">
+                            <button onclick="addCart('tsd004')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd5.jpg" alt="Hình 5" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Sang Trọng ND0284</p>
+                    <p style="color: #4c63e6;">Giá: 680000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd005">
+                            <button onclick="addCart('tsd005')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd6.jpg" alt="Hình 6" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp ND0288</p>
+                    <p style="color: #4c63e6;">Giá: 500000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd006">
+                            <button onclick="addCart('tsd006')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd7.jpg" alt="Hình 7" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đơn Giản ND0290</p>
+                    <p style="color: #4c63e6;">Giá: 500000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd007">
+                            <button onclick="addCart('tsd007')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd8.jpg" alt="Hình 8" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Vàng ND0291</p>
+                    <p style="color: #4c63e6;">Giá: 500000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd008">
+                            <button onclick="addCart('tsd008')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsd9.jpg" alt="Hình 9" class="tc">
+                    <p>Nhẫn Đôi Bạc Nhẫn Cặp Bạc Đẹp Đính Đá Sang Trọng ND0246</p>
+                    <p style="color: #4c63e6;">Giá: 680000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsd009">
+                            <button onclick="addCart('tsd009')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="tsnam">Trang Sức Nam</h2>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna1.jpg" alt="Hình 1" class="tc">
+                    <p>Nhẫn Nam Bạc Đẹp Đính Đá Trắng Sang Trọng NNA0066</p>
+                    <p style="color: #4c63e6;">Giá: 650000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna001">
+                            <button onclick="addCart('tsna001')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna2.jpg" alt="Hình 2" class="tc">
+                    <p>Nhẫn Bạc Nam Hình Rồng Mặt Đá Xanh NNA0068</p>
+                    <p style="color: #4c63e6;">Giá: 650000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna002">
+                            <button onclick="addCart('tsna002')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna3.jpg" alt="Hình 3" class="tc">
+                    <p>Nhẫn Nam Bạc Hình Ngựa Cho Người Tuổi Ngọ NNA0069</p>
+                    <p style="color: #4c63e6;">Giá: 680000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna003">
+                            <button onclick="addCart('tsna003')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna4.jpg" alt="Hình 4" class="tc">
+                    <p>Lắc Tay Bạc Nam Mắt Xích LTA0002</p>
+                    <p style="color: #4c63e6;">Giá: 1660000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna004">
+                            <button onclick="addCart('tsna004')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna5.jpg" alt="Hình 5" class="tc">
+                    <p>Nhẫn Bạc Nam Đơn Giản NNA0039</p>
+                    <p style="color: #4c63e6;">Giá: 500000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna005">
+                            <button onclick="addCart('tsna005')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna6.jpg" alt="Hình 6" class="tc">
+                    <p>Dây Chuyền Bạc Nam 1 Cây DCK0005</p>
+                    <p style="color: #4c63e6;">Giá: 1445000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna006">
+                            <button onclick="addCart('tsna006')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna7.jpg" alt="Hình 7" class="tc">
+                    <p>Nhẫn Bạc Nam Đẹp Full Đính Đá NNA0078</p>
+                    <p style="color: #4c63e6;">Giá: 650000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna007">
+                            <button onclick="addCart('tsna007')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna8.jpg" alt="Hình 8" class="tc">
+                    <p>Nhẫn Bạc Nam Mặt Đá Đỏ Hình Hổ Sang Trọng NNA0105</p>
+                    <p style="color: #4c63e6;">Giá: 700000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna008">
+                            <button onclick="addCart('tsna008')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsna9.jpg" alt="Hình 9" class="tc">
+                    <p>Dây Chuyền Bạc 925 Nam Dạng Xoắn Giá Rẻ DCK0009</p>
+                    <p style="color: #4c63e6;">Giá: 870000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsna009">
+                            <button onclick="addCart('tsna009')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="tsb">Trang Sức Cho Bé</h2>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb1.jpg" alt="Hình 1" class="tc">
+                    <p>Vòng Bạc Cho Bé Khắc Tên Có Chuông LTT0030</p>
+                    <p style="color: #4c63e6;">Giá: 500000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb001">
+                            <button onclick="addCart('tsb001')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb2.jpg" alt="Hình 2" class="tc">
+                    <p>Dây Chuyền Bạc Khắc Tên Cho Bé Hình Con Heo DCT0015</p>
+                    <p style="color: #4c63e6;">Giá: 416000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb002">
+                            <button onclick="addCart('tsb002')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb3.jpg" alt="Hình 3" class="tc">
+                    <p>Dây Chuyền Bạc Trẻ Em Khắc Tên DCT0001</p>
+                    <p style="color: #4c63e6;">Giá: 730000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb003">
+                            <button onclick="addCart('tsb003')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb4.jpg" alt="Hình 4" class="tc">
+                    <p>Dây Chuyền Bạc Khắc Tên Cho Bé DTA0008</p>
+                    <p style="color: #4c63e6;">Giá: 700000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb004">
+                            <button onclick="addCart('tsb004')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb5.jpg" alt="Hình 5" class="tc">
+                    <p>Dây Chuyền Bạc Cho Bé Gái Hình Trái Châu DTN0003</p>
+                    <p style="color: #4c63e6;">Giá: 650000₫</p> 
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb005">
+                            <button onclick="addCart('tsb005')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb6.jpg" alt="Hình 6" class="tc">
+                    <p>Dây Chuyền Trẻ Em Hình Hello Kitty DTN0005</p>
+                    <p style="color: #4c63e6;">Giá: 400000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb006">
+                            <button onclick="addCart('tsb006')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb7.jpg" alt="Hình 7" class="tc">
+                    <p>Lắc Bạc Khắc Tên Cho Bé Hình Con Chuột LTT0040</p>
+                    <p style="color: #4c63e6;">Giá: 550000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb007">
+                            <button onclick="addCart('tsb007')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb8.jpg" alt="Hình 8" class="tc">
+                    <p>Dây Chuyền Bạc Khắc Tên Cho Bé Hình Con Chó DCT0016</p>
+                    <p style="color: #4c63e6;">Giá: 416000đ</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb008">
+                            <button onclick="addCart('tsb008')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/sanpham/tsb9.jpg" alt="Hình 9" class="tc">
+                    <p>Lắc Tay Bạc Khắc Tên Cho Bé Hình Cỏ 4 Lá LTT0024</p>
+                    <p style="color: #4c63e6;">Giá: 400000₫</p>
+                    <p>Số lượng
+                        <span>
+                            <input type = "number" min = "0" max = "100" value = "0" size = "3" id="sl_tsb009">
+                            <button onclick="addCart('tsb009')">Đặt hàng</button>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div>
+            <ul class="footer1">
+                <li>
+                    <img src="images/logo/logo-tnj.png" alt="" width="70px" height="70px" id="logo-footer">
+                </li>
+                <li>
+                    <p>Luôn nâng cao dịch vụ khách hàng và chất lượng sản phẩm là giá trị cốt lõi mà Trang Sức TNJ hướng đến.</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="footer2">
+            <li>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f icon-footer" ></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter icon-footer"></i></a>
+            </li>
+            <li>
+                <a href="https://pinterest.com/"><i class="fa-brands fa-pinterest icon-footer"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram icon-footer"></i></a>
+            </li>
+            <li>
+                <a href="https://www.skype.com"><i class="fa-brands fa-skype icon-footer"></i></a>
+            </li>
+        </ul>
+        <a href="#" class="gotop"><img src="images/logo/top.png" width="50px" height="50px"></a>
+    </footer>
+    
+    <script src="javascript/js_search.js"></script>
+    <script src="javascript/js_product.js"></script>
+    
+</body>
+</html>
